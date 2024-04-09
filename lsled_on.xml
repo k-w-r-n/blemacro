@@ -1,0 +1,8 @@
+<macro name="turn-on-light" icon="PLAY">
+   <assert-service description="Ensure FEF64A35-AACE-4730-A283-92C14431B3CE service" uuid="FEF64A35-AACE-4730-A283-92C14431B3CE">
+      <assert-characteristic description="Ensure FEF64A35-AACE-4732-A283-92C14431B3CE characteristic" uuid="FEF64A35-AACE-4732-A283-92C14431B3CE">
+         <property name="WRITE" requirement="MANDATORY"/>
+      </assert-characteristic>
+   </assert-service>
+   <write description="Write 0x01 to FEF64A35-AACE-4732-A283-92C14431B3CE" characteristic-uuid="FEF64A35-AACE-4732-A283-92C14431B3CE" service-uuid="FEF64A35-AACE-4730-A283-92C14431B3CE" value="01" type="WRITE_REQUEST"/>
+</macro>

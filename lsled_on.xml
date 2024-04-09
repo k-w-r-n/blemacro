@@ -1,9 +1,9 @@
 <macro name="turn_on_light" icon="LIGHTBULB">
    <assert-service description="Ensure FEF64A35-AACE-4730-A283-92C14431B3CE service" uuid="FEF64A35-AACE-4730-A283-92C14431B3CE">
-      <assert-characteristic description="Ensure FEF64A35-AACE-4731-A283-92C14431B3CE characteristic" uuid="FEF64A35-AACE-4731-A283-92C14431B3CE">
+      <assert-characteristic description="Ensure FEF64A35-AACE-4733-A283-92C14431B3CE characteristic" uuid="FEF64A35-AACE-4733-A283-92C14431B3CE">
          <property name="WRITE" requirement="MANDATORY"/>
       </assert-characteristic>
    </assert-service>
-   <write description="Write 0x01 to FEF64A35-AACE-4731-A283-92C14431B3CE" characteristic-uuid="FEF64A35-AACE-4731-A283-92C14431B3CE" service-uuid="FEF64A35-AACE-4730-A283-92C14431B3CE" value="01" type="WRITE_REQUEST"/>
+   <write description="Write 0x01 to FEF64A35-AACE-4733-A283-92C14431B3CE" characteristic-uuid="FEF64A35-AACE-4733-A283-92C14431B3CE" service-uuid="FEF64A35-AACE-4730-A283-92C14431B3CE" value="01" type="WRITE_REQUEST"/>
    <sleep description="Sleep 500 ms" timeout="500"/>
 </macro>
